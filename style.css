@@ -1,0 +1,246 @@
+/*Waves background*/
+body {
+    margin: 0;
+    background-color: #13141a;
+    height: 100vh;
+    align-items: center;
+  }
+  /*Color bootstrap*/
+  .bg-mi-color {
+    background-color: #13141a;
+  }
+  
+/*Navbar*/
+.navbar{
+  background: rgb(77,69,93);
+  background: linear-gradient(90deg, rgba(77,69,93,1) 24%, rgba(25,51,107,1) 85%);
+    padding: 1rem;
+    
+
+    }
+ .navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+        
+      }
+  .nav-item{
+        border-radius: 2rem;
+      
+
+      }
+  .nav-link{
+    color: #E9E8E8 !important;
+
+      }
+      .navbar-brand{
+        color: #E9E8E8 !important;
+      }
+
+/*Estilos Generales*/
+section{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.seccion-texto{
+  font-size: 25px;
+  padding: 1.2rem;
+  margin: 85px;
+  color: #E9E8E8;
+  text-align: justify;
+  font-family: 'ABeeZee', sans-serif;
+  
+}
+
+  
+  
+  h1, h2 {
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: lights 5s 750ms linear infinite;
+  }
+ 
+
+  /*Seccion hero y tattoos seccion*/
+  .hero{
+    min-height: 450px;
+    text-align: center;
+  }
+  .hero-inferior{
+  height: 500px;
+  padding: 10px;
+  }
+  .hero-principal{
+    
+    align-items: center;
+
+  }
+
+
+  
+/*Tatuajes*/
+#tatuajes{
+  background: url(/images/Tatuajes\ background.svg);
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  /*margin al 40px */
+  background-size: cover;
+  
+}
+
+/*Precios*/
+.card-title{
+  color: whitesmoke;
+  font-family: 'ABeeZee', sans-serif;
+}
+.card{
+  padding: 3px;
+  margin: auto;
+  padding: 20px; 
+}
+
+/*Contacto*/
+.contact-name{
+  color: white;
+}
+li{
+  color: white;
+}
+/*Footer*/
+footer{
+  min-height: 500px;
+  background: url(/images/wave.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.footer-g .logo-up{
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 2rem;
+}
+.footer-texto{
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.iconos-redes-sociales a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+
+}
+.iconos-redes-sociales a:hover i{
+  color: black;
+}
+.derechos-de-autor{
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+  /*Animacion de titulo*/
+@keyframes lights {
+  0% {
+    color: #5B8FB9;
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: #5B8FB9;
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: #5B8FB9;
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+/*Adaptativo*/
+@media screen and (max-width: 700px) {
+  .seccion-texto{
+    margin: 40px;
+    font-size: 18px;
+    text-align: justify;
+    
+  }
+  
+  
+}
+@media screen and (max-width: 600px){
+  .carousel-inner{
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 450px){
+  .prices-tittle{
+    align-items: center;
+    text-align: center;
+    margin: 60px;
+  }
+}

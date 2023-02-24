@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <!--Metadatos-->
+      <meta charset="utf-8">
+      <meta name="author" content="Fernando">
+      <meta name="description" content="Web Dev">
+      <meta name="keywords" content="HTML, CSS, Bootstrap">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Titulo-->
+      <title>Lamenti Artem | Web Dev Front-End</title>
+      <!--FavIcon-->
+      
+      <!--Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+      <!--CSS-->
+      <link href="style.css" rel="stylesheet"> 
+      <!--Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+             <!--Barra de navegacion-->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-2 " href="#">Lamenti Artem</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  d-flex justify-content-center ms-auto  fs-5">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#tatuajes">Tatuajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#precios">Precios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--Seccion Hero-->
+          <section class="hero align-items-stretch">
+            <div class="hero-principal  d-flex flex-column justify-content-center align-items-center">
+              <h1>Lamenti Artem</h1>
+              <h2>Tattoo Studio</h2>
+            </div>
+          </section>
+          <!--Inicio-->
+          <section id="tatuajes" class="tattoos-seccion-1 ">
+            <div class="hero-inferior me-3">  
+              <p class="seccion-texto">
+                Somos un estudio profesional de tatuajes que brinda un trabajo personalizado hacia el cliente,
+                estamos aquí para ayudarle a hacer realidad su visión. Nuestros artistas se toman el tiempo para escuchar las ideas de nuestros clientes
+                y trabajar con ellos para crear un diseño que realmente capture su personalidad y estilo.
+              </p>  
+            </div>
+          </section>
+          <!--Tatuajes-->
+
+          <!--Titulo Precios-->
+          <section>
+            <div class="container">
+              <div class="row">
+                <h2 class="prices-tittle">Precios</h2>
+              </div>
+            </div>
+          </section>
+          <!--Precios-->
+          <section class="Prices">
+            <div id="precios" class="container">
+              <div class="row">
+              <div class="card mb-5 col-10 col-md-6 col-lg-4 bg-mi-color" >
+                <img src="/images/lamentiartem-21-02-2023-0001.jpg" class="card-img-top" alt="First Price">
+                <div class="card-body">
+                  <h5 class="card-title">Tatuajes pequeños (hasta 5cm): <strong>$50</strong></h5>
+                </div>
+              </div>
+              <div class="card mb-5 col-10 col-md-6 col-lg-4 bg-mi-color " >
+                <img src="images/lamentiartem-21-02-2023-0002.jpg" class="card-img-top" alt="First Price">
+                <div class="card-body">
+                  <h5 class="card-title">Tatuajes medianos (entre 5cm y 10cm): <strong>$100</strong></h5>
+                </div>
+              </div>
+              <div class="card mb-5 col-10 col-md-6 col-lg-4 bg-mi-color">
+                <img src="/images/lamentiartem-21-02-2023-0001.webp" class="card-img-top" alt="First Price">
+                <div class="card-body">
+                  <h5 class="card-title">Tatuajes grandes (más de 10cm): a partir de <strong>$150 (el precio final dependerá del tamaño y la complejidad del diseño)</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <!--Contacto-->
+          <section id="contacto">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  <h2>Contacto</h2>
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="nombre" class="contact-name">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="correo" class="contact-name">Correo electrónico</label>
+                      <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="mensaje" class="contact-name">Mensaje</label>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-name btn btn-primary">Enviar mensaje</button>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  <h2>Información de contacto</h2>
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-phone"></i> Teléfono: +1-555-555-5555</li>
+                    <li><i class="fa fa-envelope"></i> Correo electrónico: info@ejemplo.com</li>
+                    <li><i class="fa fa-map-marker"></i> Dirección: Calle Falsa 123, Ciudad Ficticia, Estado, País</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Pie de pagina(footer)-->
+      <footer class="footer-g d-flex flex-column align-items-center justify-content-center" >
+        <p class="footer-texto text-center">Lamenti Artem<br>Creemos tu tatuaje deseado.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+          </a>
+          <a href="https://www.instagram.com/lamentiartem/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Fernando (2023) &#169;</div>
+      </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     </body>
+    </html>
